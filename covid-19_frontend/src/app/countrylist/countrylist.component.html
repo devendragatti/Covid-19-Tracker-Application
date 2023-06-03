@@ -1,0 +1,23 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Country Name</th>
+      <th scope="col">Infected</th>
+      <th scope="col">recovered</th>
+      <th scope="col">deceased</th>
+      <th scope="col">delete</th>
+    
+    </tr>
+  </thead>
+    <tbody>
+      <tr>
+        <td>{{Ccountry.country}}</td>
+        <td>{{Ccountry.infected}}</td>
+        <td>{{Ccountry.recovered}}</td>
+        <td>{{Ccountry.deceased}}</td>
+        <td>
+          <button (click)="deleteFromFavourite(Ccountry)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>

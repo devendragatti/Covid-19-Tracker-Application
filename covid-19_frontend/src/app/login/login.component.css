@@ -1,0 +1,59 @@
+.form-signin{
+    text-align: center;
+    width: 30%;
+    margin: center;
+    margin-left: 35%;
+    margin-top: 10%;
+}
+/* done */
+.logo{
+    height: 6vh;
+    margin-right: auto;
+  }
+  .col-md-6{
+    text-align: center;
+    padding: 5%;
+    border: 5%;
+    padding-top: 10%;
+  }
+
+  .reg{
+ 
+    padding: 0%;
+    text-align: center;
+    align-content: center;
+  }
+  
+    mat-card{
+      display: flex;
+      flex-direction:  column;
+      height: 50vh;
+      width: 40vw;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 20vh;
+      margin-top: 110px;
+      background-color:white;
+    
+    }
+    
+    mat-card-title{
+      color: rgb(89, 19, 219);
+      font-size: 1.2em;
+      font-family: 'Acme, sans-serif';
+      padding-left: 15vw;
+      padding-top: 3vh;
+    
+    }
+    my-form{
+      display: flex;
+      flex-direction:  column;
+      width: 20vw;
+      margin: auto;
+      background-color: white;
+    }
+    
+    .label{
+      color: rgb(89, 19, 219);
+      font-family: 'Acme, sans-serif';
+    }

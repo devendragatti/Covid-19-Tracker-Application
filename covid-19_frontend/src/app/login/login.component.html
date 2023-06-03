@@ -1,0 +1,47 @@
+<app-homeheadnav> </app-homeheadnav>
+
+<body>
+<mat-card> 
+  <mat-card-header>
+
+    <mat-card-title class="reg"> Login </mat-card-title>
+  </mat-card-header>
+
+  <mat-card-content>
+    <form class="my-form" #userForm="ngForm">
+      <div>
+        <mat-form-field>
+          <mat-label class="label">Username</mat-label>
+          <div >
+            <input type="text" id="username" class="matInputdata" matInput [(ngModel)]="user.userName"
+                name="username" (keydown.space)="$event.preventDefault();" required minlength="4"  placeholder="Username">
+          </div>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field>
+          <mat-label class="label">Password</mat-label>
+          <div>
+            <input placeholder="Password" type="password" id="password" class="matInputdata" matInput [(ngModel)]="user.password"
+            name="password" (keydown.space)="$event.preventDefault();"
+            required minlength="6" >
+      </div>
+        </mat-form-field>
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+      </div>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button [disabled]="userForm.invalid" class="register-user" mat-raised-button color="accent" (click)="login()"
+      id="btn">
+      Sign in
+    </button><br>
+    {{disp_msg}}
+  </mat-card-actions>
+</mat-card>
+</body>
+<app-userfootnav> </app-userfootnav>

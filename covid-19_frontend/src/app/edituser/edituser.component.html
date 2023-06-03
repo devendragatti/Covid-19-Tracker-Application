@@ -1,0 +1,36 @@
+<app-userheadnav></app-userheadnav>
+<body>
+<mat-card>
+<mat-card-content>
+    <form class="my-form" #userForm="ngForm">
+      <div>
+        <mat-form-field>
+          <mat-label class="label">Username</mat-label>
+          <div >
+            <input type="text" id="username" class="matInputdata" matInput [(ngModel)]="user.userName" #username="ngModel"
+                name="username"  placeholder="Username">
+          </div>
+        </mat-form-field>
+      </div>
+      <div>
+        <mat-form-field>
+          <mat-label class="label">Email</mat-label>
+          <div>
+            <input type="email" id="email" class="matInputdata" matInput [(ngModel)]="user.email" #username="ngModel"
+                name="email"  placeholder="email">
+      </div>
+        </mat-form-field>
+      </div>
+    </form>
+  </mat-card-content>
+  <mat-card-actions>
+    <button [disabled]="userForm.invalid" class="register-user" mat-raised-button color="accent" (click)="changedetails()"
+      id="btn">
+      SaveChanges
+    </button><br>
+    {{disp_msg}}
+  </mat-card-actions>
+</mat-card>
+
+</body>
+  <app-userfootnav> </app-userfootnav>

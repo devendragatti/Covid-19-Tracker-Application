@@ -1,0 +1,33 @@
+/* done */
+.logo{
+    height: 6vh;
+    margin-right: auto;
+  }
+  .col-md-6{
+    text-align: center;
+    padding: 5%;
+    border: 5%;
+    padding-top: 10%;
+  }
+.input-group{
+  text-align: center;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+.table{
+  text-align: center;
+}
+  .modal-dialog.confirmation {  top: 30%;  vertical-align: middle;}
+.modal-dialog.app_spinner {  top: 40%;   vertical-align: middle;}
+#spinner .modal-content{ display: -webkit-flex;}
+.spinner{  display: flex; align-items: center; vertical-align: middle;}
+.loader { border: 10px solid #f3f3f3; border-radius: 50%; border-top: 10px solid #d24667; width: 80px; height: 80px;  -webkit-animation: spin 2s linear infinite; animation: spin 2s linear infinite; margin: auto;}
+  @-webkit-keyframes spin {
+       0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
